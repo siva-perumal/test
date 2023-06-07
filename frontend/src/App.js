@@ -2,6 +2,10 @@ import React, { useState } from 'react'
 /* import './App.css'; */
 import { BrowserRouter,Route,Routes } from "react-router-dom"
 import CreateUser from  "../src/pages/CreateUser"
+/* import UpdateUser from "../src/pages/UpdateUser"
+import Home from "../src/pages/Home"
+import Navigation from './Navigation'
+import Login from './pages/Login' */
 
 
 
@@ -14,10 +18,13 @@ function App() {
     
       <BrowserRouter>     
         <Routes>
+         {/*  <Route path="Login"/> */}
           <Route path="/createForm" element={<CreateUser/>}/>
-        </Routes>         
-      </BrowserRouter>        
+          {/* <Route path="/UpdateForm" element={<UpdateUser id={id}/>}/>
+          <Route path='/' element={<Home getId={getId}/>}/> */}
+        </Routes>
+      </BrowserRouter>    
   );
 }
 
-export default App;     
+export default App;       

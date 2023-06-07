@@ -16,12 +16,13 @@ function CreateUser() {
         .catch(e => console.log(e))
         setUsername("");
         setPassword("");
+        navigate('/');
         /* console.log( username +  " " + password ); */
        
     }
 
         return (
-         <Container>
+        <Container>
             <br/>
         <h1 className='text-center'>CreateUser</h1><br/>
         <Form onSubmit={sumbitHandler}>
@@ -40,7 +41,7 @@ function CreateUser() {
           Submit
         </Button>
       </Form>
-      </Container>     
+      </Container>    
     )
 }
 
